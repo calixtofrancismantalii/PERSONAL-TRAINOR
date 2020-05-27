@@ -327,17 +327,18 @@ nav a:hover{
 .section-Six .column .faq-list .btn{
     padding: 50px 0px;
 }
-.section-Six .column .faq-list button{
+.section-Six .column .faq-list .accordion{
+    background-color: #272525;
+    color: inherit;
+    cursor: pointer;
     padding: 20px;
     width: 100%;
     text-align: left;
+    border: solid 2px #3c3838;
+    outline: none;
     font-size: inherit;
     font-weight: bold;
-    color: inherit;
-    background-color: #272525;
-    outline: none;
-    border: solid 2px #3c3838;
-    cursor: pointer;
+    transition: 0.4s;
 }
 .section-Six .column .faq-list button span{
     display: inline-block;
@@ -346,14 +347,19 @@ nav a:hover{
 .section-Six .column .faq-list button .disable{
     display: none;
 }
-.section-Six .column .faq-list .panel{
-    padding: 20px;
-    width: 100%;
-    background-color: #272525;
+.section-Six .column .faq-list .panel p{
+    padding: 30px 0px;
     color: #9a9393;
-    border: solid 2px #3c3838;
-    display: none;
 }
+.section-Six .column .faq-list .panel{
+    width: 100%;
+    padding: 0px 18px;
+    background-color: #272525;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.2s ease-out;
+}
+
 
 
 /*sectionSix*/

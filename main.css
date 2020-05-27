@@ -340,6 +340,17 @@ nav a:hover{
     font-weight: bold;
     transition: 0.4s;
 }
+.section-Six .column .faq-list .accordion:after{
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: left;
+    margin-left: 5px;
+    padding: 0px 10px;
+}
+.section-Six .column .faq-list .active:after{
+    content: "\2212";
+}
 .section-Six .column .faq-list button span{
     display: inline-block;
     padding: 0px 10px;
@@ -359,6 +370,11 @@ nav a:hover{
     overflow: hidden;
     transition: 0.2s ease-out;
 }
+
+
+
+
+
 
 
 

@@ -199,24 +199,35 @@
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
                             </div> 
                             <div class="thumbnails">
-                                <img src="images/thumb1.jpg" onclick="a('images/thumb1.jpg')">
-                                <img src="images/thumb2.jpg" onclick="a('images/thumb2.jpg')">
-                                <img src="images/thumb3.jpg" onclick="a('images/thumb3.jpg')">
-                                <img src="images/thumb4.jpg" onclick="a('images/thumb4.jpg')">
-                                <img src="images/thumb5.jpg" onclick="a('images/thumb5.jpg')">
-                                <img src="images/thumb6.jpg" onclick="a('images/thumb6.jpg')">
-                                <img src="images/thumb7.jpg" onclick="a('images/thumb7.jpg')">
-                                <img src="images/thumb8.jpg" onclick="a('images/thumb8.jpg')">
-                                <img src="images/thumb9.jpg" onclick="a('images/thumb9.jpg')">
+                                <img src="images/thumb1.jpg" onclick="openModal(); a('images/thumb1.jpg')" id="z">
+                                <img src="images/thumb2.jpg" onclick="openModal(); a('images/thumb2.jpg')" id="b">
+                                <img src="images/thumb3.jpg" onclick="openModal(); a('images/thumb3.jpg')" id="c">
+                                <img src="images/thumb4.jpg" onclick="openModal(); a('images/thumb4.jpg')" id="d">
+                                <img src="images/thumb5.jpg" onclick="openModal(); a('images/thumb5.jpg')" id="e">
+                                <img src="images/thumb6.jpg" onclick="openModal(); a('images/thumb6.jpg')" id="f">
+                                <img src="images/thumb7.jpg" onclick="openModal(); a('images/thumb7.jpg')" id="g">
+                                <img src="images/thumb8.jpg" onclick="openModal(); a('images/thumb8.jpg')" id="h">
+                                <img src="images/thumb9.jpg" onclick="openModal(); a('images/thumb9.jpg')" id="i">
+                                
+                                
                                 <div id="modal">
                                     <span id="close"><i class="fas fa-window-close"></i></span>
-                                    <div class="modal-content">
-                                        <div class="image-container">
-                                            <span><i class="fas fa-chevron-left"></i></span>
-                                            <img src="" id="pic" style="width: 50%; transform: none;">
-                                            <span><i class="fas fa-chevron-right"></i></span>
-                                        </div>  
-                                    </div>
+                                    <div class="image-container">
+                                        <span><i class="fas fa-chevron-left" onclick="previous(1)"></i></span>
+                                        <img src="" id="pic" style="width: 50%; transform: none;">
+                                        <span><i class="fas fa-chevron-right" onclick="next()"></i></span>  
+                                    </div>  
+                                    <div class="image-row-preview">
+                                        <img src="images/thumb1.jpg" onclick="full('images/thumb1.jpg')">
+                                        <img src="images/thumb2.jpg" onclick="full('images/thumb2.jpg')">
+                                        <img src="images/thumb3.jpg" onclick="full('images/thumb3.jpg')">
+                                        <img src="images/thumb4.jpg" onclick="full('images/thumb4.jpg')">
+                                        <img src="images/thumb5.jpg" onclick="full('images/thumb5.jpg')">
+                                        <img src="images/thumb6.jpg" onclick="full('images/thumb6.jpg')">
+                                        <img src="images/thumb7.jpg" onclick="full('images/thumb7.jpg')">
+                                        <img src="images/thumb8.jpg" onclick="full('images/thumb8.jpg')">
+                                        <img src="images/thumb9.jpg" onclick="full('images/thumb9.jpg')">
+                                    </div>   
                                 </div>
                             </div>
                         </div>

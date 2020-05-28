@@ -322,25 +322,30 @@ nav a:hover{
     font-size: 20px;
     cursor: pointer;
 }
-.section-Five .column .results-images .thumbnails #modal #close i:hover{
-    color: red;
-}
-
-.section-Five .column .results-images .thumbnails #modal .modal-content{
-/*   background-color: rebeccapurple;*/
-}
-.section-Five .column .results-images .thumbnails #modal .modal-content .image-container{
+.section-Five .column .results-images .thumbnails #modal .image-container{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 70vh;
 }
-.section-Five .column .results-images .thumbnails #modal .modal-content .image-container i{
+.section-Five .column .results-images .thumbnails #modal .image-container i{
     font-size: 30px;
     padding: 10px 10px;
     margin: 0px 60px;
     cursor: pointer;
+}
+.section-Five .column .results-images .thumbnails #modal .image-row-preview{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.section-Five .column .results-images .thumbnails #modal .image-row-preview img{
+    width: 10%;
+    transform: none;
+    opacity: 50%;
+}
+.section-Five .column .results-images .thumbnails #modal .image-row-preview img:hover{
+    opacity: 100%;
 }
 
 
@@ -468,6 +473,7 @@ nav a:hover{
 .section-Seven .column form textarea{
     width: 100%;
     font-size: inherit;
+    font-family: inherit;
     padding: 15px 10px;
     height: 150px;
     outline: none;

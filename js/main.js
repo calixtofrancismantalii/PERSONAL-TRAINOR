@@ -1,13 +1,40 @@
-//for modal display
-function a(tap){
-    var modal, pic;
+//openModal
+function openModal(){
+    var modal;
     modal = document.getElementById("modal");
+    modal.style.display = "block"
+}
+//display image-container scr
+function a(tap){
+    var pic;
     pic = document.getElementById("pic");
-    
-    
-    modal.style.display = "block";
     pic.src = tap;
 }
+
+
+
+//picture control next/previous
+function previous(num){
+    
+   
+    
+}
+function next(){
+    
+    window.alert("next");
+      
+}
+
+//change display image-container scr
+function full(sel){
+    var pic;
+    pic = document.getElementById("pic");
+    pic.src = sel;
+}
+
+
+
+
 
 
 

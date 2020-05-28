@@ -199,19 +199,28 @@
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
                             </div> 
                             <div class="thumbnails">
-                                <img src="images/thumb1.jpg" style="width: 33%;">
-                                <img src="images/thumb2.jpg" style="width: 33%;">
-                                <img src="images/thumb3.jpg" style="width: 33%;">
-                                <img src="images/thumb4.jpg" style="width: 33%;">
-                                <img src="images/thumb5.jpg" style="width: 33%;">
-                                <img src="images/thumb6.jpg" style="width: 33%;">
-                                <img src="images/thumb7.jpg" style="width: 33%;">
-                                <img src="images/thumb8.jpg" style="width: 33%;">
-                                <img src="images/thumb9.jpg" style="width: 33%;">
+                                <img src="images/thumb1.jpg" onclick="a('images/thumb1.jpg')">
+                                <img src="images/thumb2.jpg" onclick="a('images/thumb2.jpg')">
+                                <img src="images/thumb3.jpg" onclick="a('images/thumb3.jpg')">
+                                <img src="images/thumb4.jpg" onclick="a('images/thumb4.jpg')">
+                                <img src="images/thumb5.jpg" onclick="a('images/thumb5.jpg')">
+                                <img src="images/thumb6.jpg" onclick="a('images/thumb6.jpg')">
+                                <img src="images/thumb7.jpg" onclick="a('images/thumb7.jpg')">
+                                <img src="images/thumb8.jpg" onclick="a('images/thumb8.jpg')">
+                                <img src="images/thumb9.jpg" onclick="a('images/thumb9.jpg')">
+                                <div id="modal">
+                                    <span id="close"><i class="fas fa-window-close"></i></span>
+                                    <div class="modal-content">
+                                        <div class="image-container">
+                                            <span><i class="fas fa-chevron-left"></i></span>
+                                            <img src="" id="pic" style="width: 50%; transform: none;">
+                                            <span><i class="fas fa-chevron-right"></i></span>
+                                        </div>  
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div> 
-                    
+                    </div>  
                 </div>
             </div>
         </div>
@@ -333,9 +342,7 @@
                     </div>
                 </div>
             </div>
-        </footer>
-        
-        
+        </footer>   
     <script src="js/main.js"></script>
     </body>
 </html>

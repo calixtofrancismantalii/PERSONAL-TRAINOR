@@ -40,6 +40,7 @@ header{
     position: sticky;
     top: 0;
     background-color: rgba(0,0,0,0.3);
+    z-index: 1;
 }
 nav{
     display: flex;
@@ -296,7 +297,53 @@ nav a:hover{
 }
 .section-Five .column .results-images .thumbnails img{
     padding: 6px;
+    width: 33%;
+    cursor: pointer;
+    transition: 0.4s;
 }
+.section-Five .column .results-images .thumbnails img:hover{
+    transform: scale(1.1)
+}
+.section-Five .column .results-images .thumbnails #modal{
+    background-color: rgba(0,0,0,0.8);
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+.section-Five .column .results-images .thumbnails #modal #close{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 25px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.section-Five .column .results-images .thumbnails #modal #close i:hover{
+    color: red;
+}
+
+.section-Five .column .results-images .thumbnails #modal .modal-content{
+/*   background-color: rebeccapurple;*/
+}
+.section-Five .column .results-images .thumbnails #modal .modal-content .image-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+.section-Five .column .results-images .thumbnails #modal .modal-content .image-container i{
+    font-size: 30px;
+    padding: 10px 10px;
+    margin: 0px 60px;
+    cursor: pointer;
+}
+
+
 
 
 /*sectionSix*/
@@ -370,12 +417,6 @@ nav a:hover{
     overflow: hidden;
     transition: 0.2s ease-out;
 }
-
-
-
-
-
-
 
 
 /*sectionSix*/

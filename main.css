@@ -17,7 +17,6 @@ body{
 }
 
 
-
 /*universal style*/
 .section-container{
     max-width: 1980px;
@@ -312,7 +311,8 @@ nav a:hover{
     left:0;
     height: 100%;
     width: 100%;
-    display: none;
+    overflow: hidden;
+    display: none;  
 }
 .section-Five .column .results-images .thumbnails #modal #close{
     display: flex;
@@ -325,15 +325,43 @@ nav a:hover{
 .section-Five .column .results-images .thumbnails #modal .image-container{
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
+    
+
+}
+.section-Five .column .results-images .thumbnails #modal .image-container > div{
+    text-align: center;
+    flex: 1;
 }
 .section-Five .column .results-images .thumbnails #modal .image-container i{
     font-size: 30px;
     padding: 10px 10px;
     margin: 0px 60px;
     cursor: pointer;
+/*    display: none;*/
 }
+.section-Five .column .results-images .thumbnails #modal .image-container .focus{
+    flex: 2;
+}
+.section-Five .column .results-images .thumbnails #modal .image-container .imageL{
+    width: 100%;
+    display: none;
+}
+.section-Five .column .results-images .thumbnails #modal .image-container .imageL img{
+    width: 100%;
+    transform: none;
+}
+
+
+
+
+
+
+
+
+
+
+
 .section-Five .column .results-images .thumbnails #modal .image-row-preview{
     display: flex;
     flex-direction: row;
@@ -347,6 +375,15 @@ nav a:hover{
 .section-Five .column .results-images .thumbnails #modal .image-row-preview img:hover{
     opacity: 100%;
 }
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1,56 +1,76 @@
 //openModal
-function openModal(){
+function openModal(num){
     var modal;
     modal = document.getElementById("modal");
     modal.style.display = "block"
 }
-//display image-container scr
-function a(tap){
-    var pic;
-    pic = document.getElementById("pic");
-    pic.src = tap;
-}
-
-
-
-//picture control next/previous
-function previous(num){
-    
-   
-    
-}
-function next(){
-    
-    window.alert("next");
-      
-}
-
-//change display image-container scr
-function full(sel){
-    var pic;
-    pic = document.getElementById("pic");
-    pic.src = sel;
-}
-
-
-
-
-
-
-
-
-
-
-
-
 //for close modal
-var close, modal;
-close = document.getElementById("close");
-modal = document.getElementById("modal");
-
-close.onclick = function(){
+function cls(){
+    var modal;
+    modal = document.getElementById("modal");
     modal.style.display = "none";
 }
+
+
+//currentSlide
+function currentSlide(pos){
+    var imageL;
+    imageL = document.getElementsByClassName("imageL");
+    imageL[pos].style.display = "block";
+}
+
+//clear currentSlide when it close
+function clearCurrentSlide(){
+    var imageL;
+    imageL = document.getElementsByClassName("imageL");
+    
+    for(var i = 0; i < imageL.length; i++){
+        imageL[i].style.display = "none"; 
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

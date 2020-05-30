@@ -12,21 +12,43 @@ function cls(){
 }
 
 
-//currentSlide
-function currentSlide(pos){
-    var imageL;
-    imageL = document.getElementsByClassName("imageL");
-    imageL[pos].style.display = "block";
+
+
+
+
+
+
+
+//galing w3school copy paste lang boset
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+
+function currentSlide(n){
+    showSlides(slideIndex = n);
 }
 
-//clear currentSlide when it close
-function clearCurrentSlide(){
-    var imageL;
-    imageL = document.getElementsByClassName("imageL");
-    
-    for(var i = 0; i < imageL.length; i++){
-        imageL[i].style.display = "none"; 
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("imageL");
+    var dots = document.getElementsByClassName("smallImage");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
     }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+ 
 }
 
 
@@ -37,6 +59,39 @@ function clearCurrentSlide(){
 
 
 
+
+
+
+
+
+
+
+////currentSlide
+//function currentSlide(pos){
+//    var imageL;
+//    imageL = document.getElementsByClassName("imageL");
+//    imageL[pos].style.display = "block";
+//}
+
+
+
+
+
+
+
+
+
+
+
+////clear currentSlide when it close
+//function clearCurrentSlide(){
+//    var imageL;
+//    imageL = document.getElementsByClassName("imageL");
+//    
+//    for(var i = 0; i < imageL.length; i++){
+//        imageL[i].style.display = "none"; 
+//    }
+//}
 
 
 

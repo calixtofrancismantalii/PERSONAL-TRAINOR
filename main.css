@@ -311,7 +311,7 @@ nav a:hover{
     left:0;
     height: 100%;
     width: 100%;
-    overflow: hidden;
+    overflow: auto;
     display: none;  
 }
 .section-Five .column .results-images .thumbnails #modal #close{
@@ -361,11 +361,12 @@ nav a:hover{
 
 
 
-
 .section-Five .column .results-images .thumbnails #modal .image-row-preview{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    
+    display: none;
 }
 .section-Five .column .results-images .thumbnails #modal .image-row-preview img{
     width: 10%;

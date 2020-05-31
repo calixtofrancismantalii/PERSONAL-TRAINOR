@@ -17,38 +17,30 @@ function cls(){
 
 
 
-
-
-//galing w3school copy paste lang boset
-//medyo naiintindihan ko na
-
+//thanks god I finaly understand the process flow <3 <3 <3
 //MUST DECLARE FIRST SLIDEINDEX
 var slideIndex = 1;
 
-function currentSlide(n){          //ONCLICK = "currentSlide()"
+function currentSlide(n){         
     showSlides(slideIndex = n);
 }
 
-function showSlides(n) {           //SELF invoke FUNCTION
+function showSlides(n) {          
     var i;
     var slides = document.getElementsByClassName("slides");
-    var smallImage = document.getElementsByClassName("smallImage");
     
     if (n > slides.length) {slideIndex = 1}
     if (n < 1) {slideIndex = slides.length}
-    
     
     //Loop Repetition for array slides  display none;
     for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
     }
+    
     slides[slideIndex -1].style.display = "block";
-     
-
- 
 }
 
-function plusSlides(n) {           //ONCLICK = "plusSlide(-1); plusSlide(1)"
+function plusSlides(n) {          
     showSlides(slideIndex += n);
 }
 
@@ -58,32 +50,6 @@ function plusSlides(n) {           //ONCLICK = "plusSlide(-1); plusSlide(1)"
 
 
 
-
-
-
-
-
-
-
-////DISPLAY BLOCK CURRENT SLIDE ALWAYS
-
-//function currentSlide(pos){
-//    var imageL;
-//    imageL = document.getElementsByClassName("imageL");
-//    imageL[pos].style.display = "block";
-//}
-
-
-////CLEAR CURRENTSLIDE ALWAYS
-
-//function clearCurrentSlide(){
-//    var imageL;
-//    imageL = document.getElementsByClassName("imageL");
-//    
-//    for(var i = 0; i < imageL.length; i++){
-//        imageL[i].style.display = "none"; 
-//    }
-//}
 
 
 

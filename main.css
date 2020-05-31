@@ -343,11 +343,11 @@ nav a:hover{
 .section-Five .column .results-images .thumbnails #modal .image-container .focus{
     flex: 2;
 }
-.section-Five .column .results-images .thumbnails #modal .image-container .imageL{
+.section-Five .column .results-images .thumbnails #modal .image-container .slides{
     width: 100%;
     display: none;
 }
-.section-Five .column .results-images .thumbnails #modal .image-container .imageL img{
+.section-Five .column .results-images .thumbnails #modal .image-container .slides img{
     width: 100%;
     transform: none;
 }

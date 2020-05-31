@@ -20,22 +20,16 @@ function cls(){
 
 
 //galing w3school copy paste lang boset
+//medyo naiintindihan ko na
 
-//FOR STUDY
-
+//MUST DECLARE FIRST SLIDEINDEX
 var slideIndex = 1;
-showSlides(slideIndex); //showSlides (1);
 
-
-function currentSlide(n){
+function currentSlide(n){          //ONCLICK = "currentSlide()"
     showSlides(slideIndex = n);
 }
 
-function plusSlides(n) {
-    showSlides(slideIndex += n);
-}
-
-function showSlides(n) {
+function showSlides(n) {           //SELF invoke FUNCTION
     var i;
     var slides = document.getElementsByClassName("slides");
     var smallImage = document.getElementsByClassName("smallImage");
@@ -43,15 +37,19 @@ function showSlides(n) {
     if (n > slides.length) {slideIndex = 1}
     if (n < 1) {slideIndex = slides.length}
     
+    
+    //Loop Repetition for array slides  display none;
     for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
     }
-    for (i = 0; i < smallImage.length; i++) {
-      smallImage[i].className = smallImage[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";
-    smallImage[slideIndex-1].className += " active";
+    slides[slideIndex -1].style.display = "block";
+     
+
  
+}
+
+function plusSlides(n) {           //ONCLICK = "plusSlide(-1); plusSlide(1)"
+    showSlides(slideIndex += n);
 }
 
 
@@ -67,9 +65,8 @@ function showSlides(n) {
 
 
 
+////DISPLAY BLOCK CURRENT SLIDE ALWAYS
 
-
-////currentSlide
 //function currentSlide(pos){
 //    var imageL;
 //    imageL = document.getElementsByClassName("imageL");
@@ -77,16 +74,8 @@ function showSlides(n) {
 //}
 
 
+////CLEAR CURRENTSLIDE ALWAYS
 
-
-
-
-
-
-
-
-
-////clear currentSlide when it close
 //function clearCurrentSlide(){
 //    var imageL;
 //    imageL = document.getElementsByClassName("imageL");
@@ -95,16 +84,6 @@ function showSlides(n) {
 //        imageL[i].style.display = "none"; 
 //    }
 //}
-
-
-
-
-
-
-
-
-
-
 
 
 

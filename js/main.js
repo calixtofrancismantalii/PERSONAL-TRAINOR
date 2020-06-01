@@ -15,39 +15,78 @@ function cls(){
 
 
 
+var slideIndex;
+slideIndex = 1;
+
+function currentSlide(n){
+    showSlide(slideIndex = n)
+}
+
+function showSlide(n){
+    var i;
+    var slides;
+    slides = document.getElementsByClassName("slides");
+    
+    if(n > slides.length){slideIndex = 1}
+    if(n < 1){slideIndex = slides.length}
+    
+    for(i = 0; i < slides.length; i++){
+        slides[i].style.display = "none";
+    }
+    
+    slides[slideIndex - 1].style.display = "block";
+}
+
+function plusSlides(n){
+    showSlide(slideIndex += n);
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 //thanks god I finaly understand the process flow <3 <3 <3
 //MUST DECLARE FIRST SLIDEINDEX
-var slideIndex = 1;
-
-function currentSlide(n){         
-    showSlides(slideIndex = n);
-}
-
-function showSlides(n) {          
-    var i;
-    var slides = document.getElementsByClassName("slides");
-    
-    if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
-    
-    //Loop Repetition for array slides  display none;
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-    }
-    
-    slides[slideIndex -1].style.display = "block";
-}
-
-function plusSlides(n) {          
-    showSlides(slideIndex += n);
-}
 
 
-
-
-
+//
+//var slideIndex = 1;
+//
+//function currentSlide(n){         
+//    showSlides(slideIndex = n);
+//}
+//
+//function showSlides(n) {          
+//    var i;
+//    var slides = document.getElementsByClassName("slides");
+//    
+//    if (n > slides.length) {slideIndex = 1}
+//    if (n < 1) {slideIndex = slides.length}
+//    
+//    //Loop Repetition for array slides  display none;
+//    for (i = 0; i < slides.length; i++) {
+//      slides[i].style.display = "none";
+//    }
+//    
+//    slides[slideIndex -1].style.display = "block";
+//}
+//
+//function plusSlides(n) {          
+//    showSlides(slideIndex += n);
+//}
+//
+//
+//
+//
+//
 
 
 

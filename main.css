@@ -201,6 +201,7 @@ nav a:hover{
     font-size: 15px;
 }
 
+
 /*sectionFour*/
 .section-Four-backgroundColor{
     background-color: black;
@@ -255,7 +256,6 @@ nav a:hover{
 .section-Four .column .row .comment .person img{
     width: 80px;
 }
-
 
 
 /*sectionFive*/
@@ -366,10 +366,6 @@ nav a:hover{
 .section-Five .column .results-images .thumbnails #modal .image-row-preview img:hover{
     opacity: 100%;
 }
-
-
-
-
 
 
 
@@ -538,10 +534,4 @@ nav a:hover{
 .section-Seven .column .social i:hover{
     color: red;
 }
-
-
-
-
-
-
 

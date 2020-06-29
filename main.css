@@ -659,6 +659,29 @@ nav a:hover{
         font-size: 250%!important;
         padding-bottom: 60px;
     }
+    .section-Two .column p{
+        line-height: 25px;
+        padding: 25px 0px;
+        color: grey;
+    }
+    .section-Two .column button{
+        font-size: 15px;
+        padding: 10px 20px;
+        border-radius: 100px;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        color: orangered;
+    }
+    .section-Two .column button:hover{
+        color: black;
+    }
+    .section-Two .column > div:hover:not(.page){
+        background-image: url(images/backgroundImageforDiv.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
     
     
     /*sectionThree*/

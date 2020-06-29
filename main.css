@@ -151,6 +151,7 @@ nav a:hover{
     border: none;
     cursor: pointer;
     color: orangered;
+    background-color: ghostwhite;
 }
 .section-Two .column button:hover{
     color: black;
@@ -672,6 +673,7 @@ nav a:hover{
         border: none;
         cursor: pointer;
         color: orangered;
+        background-color: ghostwhite!important;
     }
     .section-Two .column button:hover{
         color: black;

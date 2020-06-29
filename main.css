@@ -629,7 +629,7 @@ nav a:hover{
         background-color: black;
     }
     .section-Two{
-        padding: 100px 0px;
+        padding: 50px 0px;
     }
     .section-Two .column{
         display: flex;
@@ -656,7 +656,7 @@ nav a:hover{
         padding: 50px 30px!important;
         cursor: pointer;
     }
-    .section-Two .column h1{
+    .section-Two .column  .personal h1{
         font-size: 250%!important;
         padding-bottom: 60px;
     }
@@ -723,6 +723,7 @@ nav a:hover{
     }
     .section-Three .column div h1{
         font-size: 300%!important;
+        padding: 30px 0px;
     }
     .section-Three .column > .qoute{
         display: flex;
@@ -739,24 +740,29 @@ nav a:hover{
         background-color: black;
     }
     .section-Four{
-        padding: 100px 0px;
+        padding: 50px 0px!important;
     }
     .section-Four .column{
         display: flex;
         flex-direction: column!important;
         justify-content: flex-start;
+        
+        width: 100%;
     }
     .section-Four .column > .testimonials{
         background-image: url(images/backgroundImageforDivPages.jpg);
         background-repeat: no-repeat;
         background-position: top;
-        background-size: contain;
-        width: 29%;
-        padding-left: 60px;
-        padding-top: 80px;
+        background-size: cover;
+        width: 100%!important;
+        padding: 30px!important;
     }
     .section-Four .column .row{
         flex: 2;
+        padding: 30px!important;
+    }
+    .section-Four .column .row .title{
+        padding: 30px 0px!important;
     }
     .section-Four .column .row h1{
         font-size: 300%!important;
@@ -765,7 +771,7 @@ nav a:hover{
         border-top: solid 3px grey;
     }
     .section-Four .column .row div{
-        padding: 20px;
+        padding: 20px 0px!important;
     }
     .section-Four .column .row .comment:hover{
         cursor: pointer;
@@ -780,6 +786,17 @@ nav a:hover{
     .section-Four .column .row .Three .rating-star .checked{
         color: #dc3d23;
     }
+    
+    .section-Four .column .row .One{
+        padding: 0px!important;
+    }
+    .section-Four .column .row .Two{
+        padding: 0px!important;
+    }
+     .section-Four .column .row .Three{
+        padding: 0px!important;
+    }
+    
     .section-Four .column .row .comment .person{
         display: flex;
         flex-direction: row;

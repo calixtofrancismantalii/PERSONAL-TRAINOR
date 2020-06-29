@@ -688,9 +688,9 @@ nav a:hover{
     
     /*sectionThree*/
     .section-Three{
-        background-image: url(images/sectionThreeImage.2.png);
+        background-image: url(images/sectionThreeImage.2.for.mobile.png);
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: top;
         background-size: contain;
         padding: 0px 30px!important;
         margin-bottom: 60px;
@@ -702,6 +702,8 @@ nav a:hover{
     .section-Three .column{
         display: flex;
         flex-direction: column!important;
+        
+        padding-top: 50px;
     }
     .section-Three .column > div{
         flex: 1;

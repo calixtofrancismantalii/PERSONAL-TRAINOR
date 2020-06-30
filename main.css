@@ -540,10 +540,10 @@ nav a:hover{
     
     
     body{
-        background-image: url(images/backgroundImage.for.mobile.png);
+        background-image: url(images/backgroundImage.for.mobile.png)!important;
         background-repeat: no-repeat;
         background-position: center;
-        background-size: contain;
+        background-size: cover;
         background-attachment: fixed;
     }
     

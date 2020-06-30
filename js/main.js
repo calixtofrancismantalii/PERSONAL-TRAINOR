@@ -4,7 +4,7 @@ function openToggle(){
     ul = document.getElementById("ul");
     
     if(ul.style.height === "0px"){
-        ul.style.height = "343px";
+        ul.style.height = "365px";
     }
     else{
         ul.style.height = "0px";

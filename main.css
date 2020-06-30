@@ -912,27 +912,26 @@ nav a:hover{
     
     /*sectionSix*/
     .section-Six{
-        background-color: black;
-        padding: 100px 0px;
+        background-color: #f10400;
+        padding: 50px 0px!important;
     }
     .section-Six .column{
         display: flex;
         flex-direction: column!important;
-        justify-content: flex-start;
     }
     .section-Six .column .faq{
-        width: 29%;
-        padding-left: 60px;
-        padding-top: 80px;
+        width: 100%;
+        padding: 30px!important;
     }
     .section-Six .column .faq-list{
-        flex: 2;
+        width: 100%;
     }
     .section-Six .column .faq-list h1{
-        font-size: 250%!important;
+        font-size: 300%!important;
+        padding-bottom: 30px!important;
     }
     .section-Six .column .faq-list .title{
-        width: 67%;
+        width: 100%;
         padding: 20px;
     }
     .section-Six .column .faq-list .btn{
@@ -966,9 +965,6 @@ nav a:hover{
         display: inline-block;
         padding: 0px 10px;
     }
-    .section-Six .column .faq-list button .disable{
-        display: none;
-    }
     .section-Six .column .faq-list .panel p{
         padding: 30px 0px;
         color: #9a9393;
@@ -985,97 +981,31 @@ nav a:hover{
     
     /*sectionSeven*/
     .section-Seven{
-        padding: 100px 0px;
+        padding: 50px 0px!important;
     }
     .section-Seven .column{
         display: flex;
         flex-direction: column!important;
-        justify-content: flex-start
+        justify-content: flex-start;
     }
     .section-Seven .column .contact{
-        width: 29%;
-        padding-left: 60px;
-        padding-top: 80px;
+        width: 100%!important;
+        padding: 30px!important;
     }
     .section-Seven .column .form{
-        flex: 2;
         display: flex;
         flex-direction: column!important;
     }
     .section-Seven .column .form .title{
-        width: 65%;
+        width: 100%;
+        padding: 0px 30px!important;
     }
     .section-Seven .column .form h1{
         font-size: 300%!important;
+        padding-bottom: 30px!important;
+        
     }
-    .section-Seven .column form{
-        padding: 50px 0px;
-        width: 100%;
-    }
-    .section-Seven .column form > div{
-        padding: 10px 0px;
-    }
-    .section-Seven .column form .name{
-        display: flex;
-        flex: row;
-        justify-content: space-between;
-    }
-    .section-Seven .column form input[type=text], input[type=email]{
-        width: 48%;
-        font-size: inherit;
-        padding: 15px 10px;
-        outline: none;
-    }
-    .section-Seven .column form input[type=email]{
-        width: 100%;
-        outline: none;
-    }
-    .section-Seven .column form textarea{
-        width: 100%;
-        font-size: inherit;
-        font-family: inherit;
-        padding: 15px 10px;
-        height: 150px;
-        outline: none;
-    }
-    .section-Seven .column .btn{
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-    }
-    .section-Seven .column form button{
-        width: 20%;
-        font-size: inherit;
-        padding: 15px 10px;
-        outline: none;
-        margin-left: auto;
-        border: none;
-        border-radius: 5%;
-        cursor: pointer;
-        background-color: #dc3d23;
-        color: white;
-    }
-    .section-Seven .column .social{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 0px 50px;
-    }
-    .section-Seven .column .social label{
-        color: gray;
-    }
-    .section-Seven .column .social > div{
-        padding: 10px 0px;
-    }
-    .section-Seven .column .social i{
-        font-size: 30px;
-        margin: 10px;
-        cursor: pointer;
-        color: #651d27;
-    }
-    .section-Seven .column .social i:hover{
-        color: red;
-    }
+    
 
     
 

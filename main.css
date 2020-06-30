@@ -540,7 +540,7 @@ nav a:hover{
     
     
     body{
-        background-image: url(images/backgroundImage);
+        background-image: url(images/backgroundImage.for.mobile.png);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -592,8 +592,9 @@ nav a:hover{
         background-size: contain!important;
         height: 653px;
         padding: 0px 30px!important;
-        margin: 15px 0px;
-        margin-bottom: 60px;
+        margin: 0px 0px!important;
+        margin-bottom: 0!importantpx;
+        height: 100vh!important;
     }
     .section-One .container{
         display: flex;
@@ -602,7 +603,7 @@ nav a:hover{
     .section-One .column{
         display: flex;
         flex-direction: column!important;
-        padding-top: 80%;
+        padding-top: 80%!important;
     }
     .section-One .column > div{
         flex: 0px!important;
@@ -613,13 +614,17 @@ nav a:hover{
     }
     .section-One .column > .qoute{
         display: flex;
-        flex-direction: row-reverse;
-        text-align: left;
+        flex-direction: row-reverse!important;
+        text-align: left!important;
         font-size: 100%!important;
     }
+    .section-One .column > .qoute h3{
+        font-size: 100%!important;
+        font-weight: normal!important;
+    }
     .section-One .column i{
-        font-size: 200%;
-        padding: 5px;
+        font-size: 180%;
+        padding: 5px 10px;
         margin-left: 0px!important;
     }
     
@@ -629,7 +634,7 @@ nav a:hover{
         background-color: black;
     }
     .section-Two{
-        padding: 50px 0px;
+        padding: 0px 0px!important;
     }
     .section-Two .column{
         display: flex;
@@ -637,28 +642,27 @@ nav a:hover{
     }
     .section-Two .column > div{
         width: 100%!important;
+        border: solid 1px white;
     }
     .section-Two .column .page{
-        width: 30%;
+        width: 100%!important;
         display: flex;
         flex-direction: column;
         justify-content: center;
         background-image: url(images/backgroundImageforDivPages.jpg);
         background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
+        background-position: center!important;
+        background-size: cover!important;
         padding: 30px!important;
     }
-    .section-Two .column > div:not(.page){
-        flex: 1;
+    .section-Two .column > div:not(.page){                    
         margin-right: 10px;
         border-left: none!important;
         padding: 50px 30px!important;
         cursor: pointer;
     }
-    .section-Two .column  .personal h1{
-        font-size: 250%!important;
-        padding-bottom: 60px;
+    .section-Two .column > div h1{
+        font-size: 260%!important;
     }
     .section-Two .column p{
         line-height: 25px;
@@ -721,9 +725,10 @@ nav a:hover{
         background-size: cover;
         padding: 30px 0px!important;
     }
-    .section-Three .column div h1{
-        font-size: 300%!important;
+    .section-Three .column .personal h1{
+        font-size: 350%!important;
         padding: 30px 0px;
+        padding-bottom: 60px;
     }
     .section-Three .column > .qoute{
         display: flex;
@@ -765,7 +770,7 @@ nav a:hover{
         padding: 30px 0px!important;
     }
     .section-Four .column .row h1{
-        font-size: 300%!important;
+        font-size: 350%!important;
     }
     .section-Four .column .row > div:not(.title){
         border-top: solid 3px grey;
@@ -832,7 +837,7 @@ nav a:hover{
         width: 65%;
     }
     .section-Five .column .results-images h1{
-        font-size: 300%!important;
+        font-size: 350%!important;
     }
     .section-Five .column .results-images .title{
         padding: 20px;
@@ -936,7 +941,7 @@ nav a:hover{
         flex: 2;
     }
     .section-Six .column .faq-list h1{
-        font-size: 300%!important;
+        font-size: 250%!important;
     }
     .section-Six .column .faq-list .title{
         width: 67%;

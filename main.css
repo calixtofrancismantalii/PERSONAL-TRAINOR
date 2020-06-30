@@ -542,7 +542,7 @@ nav a:hover{
     body{
         background-image: url(images/backgroundImage.for.mobile.png);
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: left;
         background-size: cover;
         background-attachment: fixed;
     }
@@ -663,24 +663,6 @@ nav a:hover{
     }
     .section-Two .column > div h1{
         font-size: 260%!important;
-    }
-    .section-Two .column p{
-        line-height: 25px;
-        padding: 25px 0px;
-        color: grey;
-    }
-    .section-Two .column button{
-        font-size: 15px;
-        padding: 10px 20px;
-        border-radius: 100px;
-        outline: none;
-        border: none;
-        cursor: pointer;
-        color: orangered;
-        background-color: ghostwhite!important;
-    }
-    .section-Two .column button:hover{
-        color: black;
     }
     .section-Two .column > div:hover:not(.page){
         background-image: url(images/backgroundImageforDiv.jpg);

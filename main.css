@@ -542,8 +542,8 @@ nav a:hover{
     body{
         background-image: url(images/backgroundImage.for.mobile.png);
         background-repeat: no-repeat;
-        background-position: left;
-        background-size: cover;
+        background-position: center;
+        background-size: contain;
         background-attachment: fixed;
     }
     

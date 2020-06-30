@@ -601,11 +601,11 @@ nav a:hover{
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover!important;
-/*        height: 653px;*/
+        height: 660px;
         padding: 0px 0px!important;
         margin: 0px 0px!important;
         margin-bottom: 0!important;
-        height: 100vh;
+/*        height: 100vh;*/
     }
     .section-One .column{
         display: flex;

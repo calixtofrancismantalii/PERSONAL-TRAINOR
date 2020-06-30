@@ -180,11 +180,11 @@ nav a:hover{
 .section-Three .column div h1{
     font-size: 420%;
 }
-.section-Three .column > .personal{
+.section-Three .column > .aboutme{
     flex: 2;
 /*    visibility: hidden;*/
 }
-.section-Three .column > .personal article{
+.section-Three .column > .aboutme article{
     padding: 20px 0px;
     line-height: 30px;
 }
@@ -328,7 +328,7 @@ nav a:hover{
     
 
 }
-.section-Five .column .results-images .thumbnails #modal .image-container > div{
+.section-Five .column .results-images .thumbnails #modal .image-container > div:not(.focus){
     text-align: center;
     flex: 1;
 }
@@ -541,8 +541,13 @@ nav a:hover{
     
     body{
         background-image: none!important;
-        background-color: saddlebrown;
+        background-color: black;
     }
+/*
+    .section-One, .section-Two, .section-Three{
+        border-bottom: solid 3px #464545;
+    }
+*/
     
     /*nav*/
     header{
@@ -587,11 +592,10 @@ nav a:hover{
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover!important;
-        height: 653px;
+/*        height: 653px;*/
         padding: 0px 0px!important;
         margin: 0px 0px!important;
         margin-bottom: 0!important;
-        
         height: 100vh;
     }
     .section-One .column{
@@ -635,9 +639,9 @@ nav a:hover{
         display: flex;
         flex-direction: column!important;
     }
-    .section-Two .column > div{
+    .section-Two .column > div:not(.page){
         width: 100%!important;
-        border: solid 1px white;
+        border-bottom: solid 1px grey!important;
     }
     .section-Two .column .page{
         width: 100%!important;
@@ -674,7 +678,7 @@ nav a:hover{
         background-position: top;
         background-size: contain;
         padding: 0px 30px!important;
-        margin-bottom: 60px;
+        padding-bottom: 60px!important;
     }
     .section-Three .container{
         display: flex;
@@ -683,8 +687,7 @@ nav a:hover{
     .section-Three .column{
         display: flex;
         flex-direction: column!important;
-        
-        padding-top: 50px;
+        padding-top: 65px!important;
     }
     .section-Three .column > div{
         flex: 1;
@@ -702,18 +705,20 @@ nav a:hover{
         background-size: cover;
         padding: 30px 0px!important;
     }
-    .section-Three .column .personal h1{
-        font-size: 350%!important;
-        padding: 30px 0px;
-        padding-bottom: 60px;
+    .section-Three .column .aboutme h1{
+        font-size: 300%!important;
+        padding: 30px 0px!important;
+        padding-bottom: 30px!important;
     }
     .section-Three .column > .qoute{
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start!important;
-        font-size: 18px;
-        line-height: 25px;
+    }
+    .section-Three .column > .qoute p{
+        text-transform: lowercase;
+        font-size: 16px;
     }
     
     
@@ -722,7 +727,7 @@ nav a:hover{
         background-color: black;
     }
     .section-Four{
-        padding: 50px 0px!important;
+        padding: 0px 0px!important;
     }
     .section-Four .column{
         display: flex;
@@ -747,7 +752,7 @@ nav a:hover{
         padding: 30px 0px!important;
     }
     .section-Four .column .row h1{
-        font-size: 350%!important;
+        font-size: 300%!important;
     }
     .section-Four .column .row > div:not(.title){
         border-top: solid 3px grey;
@@ -757,7 +762,7 @@ nav a:hover{
     }
     .section-Four .column .row .comment:hover{
         cursor: pointer;
-        background-color: #272525;
+        background-color: inherit!important;
     }
     .section-Four .column .row .One .rating-star .checked{
         color: #dc3d23;
@@ -775,7 +780,7 @@ nav a:hover{
     .section-Four .column .row .Two{
         padding: 0px!important;
     }
-     .section-Four .column .row .Three{
+    .section-Four .column .row .Three{
         padding: 0px!important;
     }
     
@@ -793,28 +798,30 @@ nav a:hover{
     .section-Five{
         background-image: url(images/sectionFiveImage.1.png);
         background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        padding: 100px 0px;
+        background-position: top;
+        background-size: contain;
+        padding: 50px 0px!important;
     }
     .section-Five .column{
         display: flex;
         flex-direction: column!important;
         justify-content: flex-start;
+        padding: 30px;
     }
     .section-Five .column > .results{
-        width: 29%;
-        padding-left: 60px;
-        padding-top: 80px;
+        width: 100%!important;
+        padding: 30px 0px!important;
     }
     .section-Five .column .results-images{
         flex: 2;
     }
     .section-Five .column .results-images .title{
-        width: 65%;
+        width: 100%;
+        padding: 30px 0px!important;
     }
     .section-Five .column .results-images h1{
-        font-size: 350%!important;
+        font-size: 300%!important;
+        padding-bottom: 30px!important;
     }
     .section-Five .column .results-images .title{
         padding: 20px;
@@ -827,7 +834,7 @@ nav a:hover{
     }
     .section-Five .column .results-images .thumbnails img{
         padding: 6px;
-        width: 33%;
+        width: 100%!important;
         cursor: pointer;
         transition: 0.4s;
     }
@@ -854,26 +861,30 @@ nav a:hover{
         cursor: pointer;
     }
     .section-Five .column .results-images .thumbnails #modal .image-container{
+        width: 100%!important;
         display: flex;
-        flex-direction: row;
-        align-items: center;
-
-
+        flex-direction: row!important;
+        justify-content: flex-start!important;
+        height: 70vh;
     }
-    .section-Five .column .results-images .thumbnails #modal .image-container > div{
+    .section-Five .column .results-images .thumbnails #modal .image-container > div:not(.focus){
         text-align: center;
-        flex: 1;
+        flex: 0!important;
+        padding: 5px;
     }
+    .section-Five .column .results-images .thumbnails #modal .image-container .focus{
+        padding: 0px!important;
+        margin: 0px!important;
+    }
+
     .section-Five .column .results-images .thumbnails #modal .image-container i{
         font-size: 30px;
-        padding: 10px 10px;
-        margin: 0px 60px;
+        padding: 0px 0px;
+        margin: 0px 0px;
         cursor: pointer;
     /*    display: none;*/
     }
-    .section-Five .column .results-images .thumbnails #modal .image-container .focus{
-        flex: 2;
-    }
+  
     .section-Five .column .results-images .thumbnails #modal .image-container .slides{
         width: 100%;
         display: none;

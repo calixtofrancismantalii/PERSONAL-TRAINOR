@@ -541,7 +541,7 @@ nav a:hover{
     
     body{
         background-image: none!important;
-        background-color: bisque;
+        background-color: saddlebrown;
     }
     
     /*nav*/
@@ -591,10 +591,8 @@ nav a:hover{
         padding: 0px 0px!important;
         margin: 0px 0px!important;
         margin-bottom: 0!important;
-    }
-    .section-One .container{
-        display: flex;
-        flex-direction: column!important;
+        
+        height: 100vh;
     }
     .section-One .column{
         display: flex;

@@ -540,11 +540,8 @@ nav a:hover{
     
     
     body{
-        background-image: url(images/backgroundImage.for.mobile.png)!important;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        background-attachment: fixed;
+        background-image: none!important;
+        background-color: bisque;
     }
     
     /*nav*/
@@ -589,12 +586,11 @@ nav a:hover{
         background-image: url(images/sectionOneImage.2.for.mobile.png)!important;
         background-repeat: no-repeat;
         background-position: center;
-        background-size: contain!important;
+        background-size: cover!important;
         height: 653px;
-        padding: 0px 30px!important;
+        padding: 0px 0px!important;
         margin: 0px 0px!important;
         margin-bottom: 0!important;
-/*        height: 100vh!important;*/
     }
     .section-One .container{
         display: flex;
@@ -604,6 +600,7 @@ nav a:hover{
         display: flex;
         flex-direction: column!important;
         padding-top: 80%!important;
+        padding: 0px 30px;
     }
     .section-One .column > div{
         flex: 0px!important;

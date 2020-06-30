@@ -1,3 +1,21 @@
+//toggle
+function openToggle(){
+    var ul;
+    ul = document.getElementById("ul");
+    
+    if(ul.style.height === "0px"){
+        ul.style.height = "343px";
+    }
+    else{
+        ul.style.height = "0px";
+    }
+}
+
+
+
+
+
+
 //openModal
 function openModal(num){
     var modal;

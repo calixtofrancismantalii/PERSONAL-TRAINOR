@@ -33,7 +33,6 @@ body{
 }
 
 
-
 /*nav*/
 header{
     background-color: rgba(0,0,0,0.3);
@@ -43,6 +42,9 @@ nav{
     display: flex;
     flex-direction: row;
     padding: 10px 0px;
+}
+label, #toggle{
+    display: none;
 }
 nav ul{
     list-style-type: none;
@@ -68,6 +70,7 @@ nav .titlelogo a{
 nav a:hover{
     color: #dc3d23;
 }
+
 
 /*sectionOne*/
 .section-One{
@@ -102,6 +105,7 @@ nav a:hover{
     padding: 5px;
     margin-left: 15px;
 }
+
 
 /*sectionTwo*/
 .section-Two-backgroundColor{
@@ -367,7 +371,6 @@ nav a:hover{
 }
 
 
-
 /*sectionSix*/
 .section-Six{
     background-color: black;
@@ -538,52 +541,55 @@ nav a:hover{
 /*MOBILE SCREEN SIZE*/
 @media screen and (max-width: 481px){
     
-    
     body{
         background-image: none!important;
-        background-color: black;
+        background-color: black!important;
     }
-/*
-    .section-One, .section-Two, .section-Three{
-        border-bottom: solid 3px #464545;
-    }
-*/
+    
+
     
     /*nav*/
     header{
         background-color: rgba(0,0,0,0.3);
         z-index: 1;
-        padding: 0px 20px;
-    }
-    nav{
-        display: flex;
-        flex-direction: row;
         padding: 10px 0px;
+    }
+    nav label{
+        display: block;
+        font-size: 20px!important;
+        color: black;
+        padding: 10px 15px;
+        border-radius: 100px;
+        background-color: white;
+        margin-left: 20px;
     }
     nav ul{
         list-style-type: none;
         display: flex;
         flex-direction: column!important;
+        position: absolute;
+        margin-top: 65px;
+        background-color: #191919;
+        box-shadow: 1px 24px 38px -1px rgba(0,0,0,0.47);
+        width: 100%;
+        height: 0px;
+        overflow: hidden;
+        transition: 0.4s;
     }
     nav li{
-        padding: 15px!important;
+        padding: 0px!important;
     }
     nav ul a{
+        padding: 15px 20px!important;
         display: block;
         text-decoration: none;
         color: inherit;
+        border-bottom: solid 1px #232323;
     }
     nav .titlelogo{
-        margin-left: auto;
-        text-align: right;
+        margin-right: 20px;
     }
-    nav .titlelogo a{
-        text-decoration: none;
-        color: white;
-    }
-    nav a:hover{
-        color: #dc3d23;
-    }
+    /*OK*/
 
     
     /*sectionOne*/
@@ -796,7 +802,7 @@ nav a:hover{
     
     /*sectionFive*/
     .section-Five{
-        background-image: url(images/sectionFiveImage.1.png);
+        background-image: url(images/sectionFiveImage.1.for.mobile.png);
         background-repeat: no-repeat;
         background-position: top;
         background-size: contain;
@@ -912,7 +918,6 @@ nav a:hover{
     
     /*sectionSix*/
     .section-Six{
-        background-color: #f10400;
         padding: 50px 0px!important;
     }
     .section-Six .column{

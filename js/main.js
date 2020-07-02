@@ -11,6 +11,13 @@ function openToggle(){
     }
 }
 
+//close dropdown after click
+function closeLinks(){
+    var ul;
+    ul = document.getElementById("ul");
+    ul.style.height = "0px";
+}
+
 //openModal
 function openModal(num){
     var modal;
@@ -24,10 +31,6 @@ function cls(){
     modal = document.getElementById("modal");
     modal.style.display = "none";
 }
-
-
-
-
 
 
 //hide and show navbar on scroll up and scroll down

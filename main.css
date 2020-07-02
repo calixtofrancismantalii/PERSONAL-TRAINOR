@@ -598,6 +598,9 @@ nav a:hover{
         justify-content: center;
         align-items: flex-start;
     }
+    nav .titlelogo span{
+        font-size: 8px!important;
+    }
     /*OK*/
 
     

@@ -43,7 +43,7 @@ nav{
     flex-direction: row;
     padding: 10px 0px;
 }
-label, #toggle{
+label{
     display: none;
 }
 nav ul{
@@ -557,9 +557,7 @@ nav a:hover{
         padding: 10px 0px;
         position: fixed;
         width: 100%;
-    }
-    #navbar{
-        background-color: aqua;
+        transition: 0.4s;
     }
     nav label{
         display: block;

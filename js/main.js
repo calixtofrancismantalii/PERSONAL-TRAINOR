@@ -32,17 +32,18 @@ function cls(){
 
 //hide and show navbar on scroll up and scroll down
 
-var lastScrollTop, navbar;
+var lastScrollTop, header;
 lastScrollTop = 0;
-navbar = document.getElementById("navbar");
+header = document.getElementById("header");
+
 window.addEventListener("scroll", function(){
     var scrollTop = pageYOffset || document.getElement.scrollTop;
     
     if(scrollTop > lastScrollTop){
-        navbar.style.top = "-80px";
+        header.style.top = "-85px";
     }
     else{
-        navbar.style.top = "0px";
+        header.style.top = "0px";
     }
     lastScrollTop = scrollTop;
 })

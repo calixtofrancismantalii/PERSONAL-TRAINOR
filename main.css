@@ -548,10 +548,8 @@ nav a:hover{
     }
     
 
-    
     /*nav*/
     header{
-/*        background-color: black;*/
         background-color: rgba(0,0,0,0.3)!important;
         z-index: 1;
         padding: 10px 0px;
@@ -609,8 +607,8 @@ nav a:hover{
     /*sectionOne*/
     .section-One{
         background-image: url(images/sectionOneImage.2.for.mobile.png)!important;
-        background-repeat: no-repeat;
-        background-position: center;
+        background-repeat: no-repeat!important;
+        background-position: center!important;
         background-size: cover!important;
         height: 753px;!important;
         padding: 0px 0px!important;
@@ -648,9 +646,6 @@ nav a:hover{
     
     
     /*sectionTwo*/
-    .section-Two-backgroundColor{
-        background-color: black;
-    }
     .section-Two{
         padding: 0px 0px!important;
     }
@@ -692,10 +687,10 @@ nav a:hover{
     
     /*sectionThree*/
     .section-Three{
-        background-image: url(images/sectionThreeImage.2.for.mobile.png);
+        background-image: url(images/sectionThreeImage.2.for.mobile.png)!important;
         background-repeat: no-repeat;
         background-position: top;
-        background-size: contain;
+        background-size: contain!important;
         padding: 0px 30px!important;
         padding-bottom: 60px!important;
     }
@@ -731,20 +726,17 @@ nav a:hover{
     }
     .section-Three .column > .qoute{
         display: flex;
-        flex-direction: column;
+        flex-direction: column!important;
         justify-content: flex-start;
         align-items: flex-start!important;
     }
     .section-Three .column > .qoute p{
-        text-transform: lowercase;
+        text-transform: uppercase;
         font-size: 16px;
     }
     
     
     /*sectionFour*/
-    .section-Four-backgroundColor{
-        background-color: black;
-    }
     .section-Four{
         padding: 0px 0px!important;
     }
@@ -752,8 +744,7 @@ nav a:hover{
         display: flex;
         flex-direction: column!important;
         justify-content: flex-start;
-        
-        width: 100%;
+        width: 100%;      
     }
     .section-Four .column > .testimonials{
         background-image: url(images/backgroundImageforDivPages.jpg);
@@ -779,6 +770,9 @@ nav a:hover{
     .section-Four .column .row div{
         padding: 20px 0px!important;
     }
+    .section-Four .column .row .person > div{
+        padding: 0px 20px!important;
+    }
     .section-Four .column .row .comment:hover{
         cursor: pointer;
         background-color: inherit!important;
@@ -792,7 +786,6 @@ nav a:hover{
     .section-Four .column .row .Three .rating-star .checked{
         color: #dc3d23;
     }
-    
     .section-Four .column .row .One{
         padding: 0px!important;
     }
@@ -802,7 +795,6 @@ nav a:hover{
     .section-Four .column .row .Three{
         padding: 0px!important;
     }
-    
     .section-Four .column .row .comment .person{
         display: flex;
         flex-direction: row;

@@ -550,7 +550,8 @@ nav a:hover{
     
     /*nav*/
     header{
-        background-color: rgba(0,0,0,0.0)!important;
+/*        background-color: black;*/
+        background-color: rgba(0,0,0,0.3)!important;
         z-index: 1;
         padding: 10px 0px;
         position: fixed;
@@ -589,8 +590,13 @@ nav a:hover{
         border-bottom: solid 1px #232323;
     }
     nav .titlelogo{
+        font-size: 8px!important;
         margin-right: 20px;
-        display: none;
+        margin-left: 20px!important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
     }
     /*OK*/
 
@@ -601,11 +607,10 @@ nav a:hover{
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover!important;
-/*        height: 660px!important;*/
+        height: 753px;!important;
         padding: 0px 0px!important;
         margin: 0px 0px!important;
         margin-bottom: 0!important;
-/*        height: 100vh;*/
     }
     .section-One .column{
         display: flex;

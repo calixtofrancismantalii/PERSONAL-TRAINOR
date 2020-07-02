@@ -11,17 +11,13 @@ function openToggle(){
     }
 }
 
-
-
-
-
-
 //openModal
 function openModal(num){
     var modal;
     modal = document.getElementById("modal");
     modal.style.display = "block"
 }
+
 //for close modal
 function cls(){
     var modal;
@@ -30,6 +26,26 @@ function cls(){
 }
 
 
+
+
+
+
+//hide and show navbar on scroll up and scroll down
+
+var lastScrollTop, navbar;
+lastScrollTop = 0;
+navbar = document.getElementById("navbar");
+window.addEventListener("scroll", function(){
+    var scrollTop = pageYOffset || document.getElement.scrollTop;
+    
+    if(scrollTop > lastScrollTop){
+        navbar.style.top = "-80px";
+    }
+    else{
+        navbar.style.top = "0px";
+    }
+    lastScrollTop = scrollTop;
+})
 
 
 

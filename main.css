@@ -81,6 +81,7 @@ nav a:hover{
     height: 653px;
     padding: 0px 90px;
     margin: 15px 0px;
+/*    margin-top: 40px;*/
     margin-bottom: 60px;
 }
 .section-One .column > div{
@@ -557,6 +558,9 @@ nav a:hover{
         position: fixed;
         width: 100%;
     }
+    #navbar{
+        background-color: aqua;
+    }
     nav label{
         display: block;
         font-size: 20px!important;
@@ -593,10 +597,10 @@ nav a:hover{
         font-size: 8px!important;
         margin-right: 20px;
         margin-left: 20px!important;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
+        display: flex!important;
+        flex-direction: column!important;
+        justify-content: center!important;
+        align-items: flex-start!important;
     }
     nav .titlelogo span{
         font-size: 12px!important;

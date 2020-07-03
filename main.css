@@ -807,25 +807,27 @@ nav a:hover{
     
     /*sectionFive*/
     .section-Five{
-        background-image: url(images/sectionFiveImage.1.for.mobile.png);
-        background-repeat: no-repeat;
+        background-image: url(images/sectionFiveImage.1.for.mobile.png)!important;
+        background-repeat: no-repeat!important;
         background-position: top;
-        background-size: contain;
+        background-size: contain!important;
         padding: 50px 0px!important;
     }
     .section-Five .column{
         display: flex;
         flex-direction: column!important;
         justify-content: flex-start;
-        padding: 30px;
+        padding: 30px!important;
     }
     .section-Five .column > .results{
         width: 100%!important;
         padding: 30px 0px!important;
     }
+/*
     .section-Five .column .results-images{
         flex: 2;
     }
+*/
     .section-Five .column .results-images .title{
         width: 100%;
         padding: 30px 0px!important;
@@ -833,9 +835,6 @@ nav a:hover{
     .section-Five .column .results-images h1{
         font-size: 300%!important;
         padding-bottom: 30px!important;
-    }
-    .section-Five .column .results-images .title{
-        padding: 20px;
     }
     .section-Five .column .results-images .thumbnails{
         display: flex;
@@ -848,9 +847,6 @@ nav a:hover{
         width: 100%!important;
         cursor: pointer;
         transition: 0.4s;
-    }
-    .section-Five .column .results-images .thumbnails img:hover{
-        transform: scale(1.1)
     }
     .section-Five .column .results-images .thumbnails #modal{
         background-color: rgba(0,0,0,0.8);
@@ -887,15 +883,12 @@ nav a:hover{
         padding: 0px!important;
         margin: 0px!important;
     }
-
     .section-Five .column .results-images .thumbnails #modal .image-container i{
         font-size: 30px;
         padding: 0px 0px;
         margin: 0px 0px;
         cursor: pointer;
-    /*    display: none;*/
     }
-  
     .section-Five .column .results-images .thumbnails #modal .image-container .slides{
         width: 100%;
         display: none;
@@ -908,7 +901,6 @@ nav a:hover{
         display: flex;
         flex-direction: row;
         justify-content: center;
-
         display: none;
     }
     .section-Five .column .results-images .thumbnails #modal .image-row-preview img{
@@ -947,6 +939,7 @@ nav a:hover{
     .section-Six .column .faq-list .btn{
         padding: 50px 30px;
     }
+/*
     .section-Six .column .faq-list .accordion{
         background-color: #272525;
         color: inherit;
@@ -987,7 +980,7 @@ nav a:hover{
         overflow: hidden;
         transition: 0.2s ease-out;
     }
-    
+*/
     
     /*sectionSeven*/
     .section-Seven{
@@ -1013,11 +1006,6 @@ nav a:hover{
     .section-Seven .column .form h1{
         font-size: 300%!important;
         padding-bottom: 30px!important;
-        
     }
-    
-
-    
-
 }
 

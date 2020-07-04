@@ -116,7 +116,7 @@ nav a:hover{
     padding: 100px 0px;
 }
 .section-Two .column .page{
-    width: 30%;
+    width: 60%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -126,10 +126,13 @@ nav a:hover{
     background-size: cover;
     padding-left: 60px;
 }
+.section-Two .column .offers{
+    display: flex;
+}
 .section-Two .column .page > h4, h3{
     padding: 0px;
 }
-.section-Two .column > div:not(.page){
+.section-Two .column .offers > div:not(.page){
     flex: 1;
     margin-right: 10px;
     border-left: solid 3px grey;
@@ -161,7 +164,7 @@ nav a:hover{
 .section-Two .column button:hover{
     color: black;
 }
-.section-Two .column > div:hover:not(.page){
+.section-Two .column > .offers div:hover:not(.page){
     background-image: url(images/backgroundImageforDiv.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -601,7 +604,6 @@ nav a:hover{
     nav .titlelogo span{
         font-size: 12px!important;
     }
-    /*OK*/
 
     
     /*sectionOne*/
@@ -648,10 +650,15 @@ nav a:hover{
     /*sectionTwo*/
     .section-Two{
         padding: 0px 0px!important;
+        margin: 0px;
     }
     .section-Two .column{
         display: flex;
         flex-direction: column!important;
+    }
+    .section-Two .column .offers{
+        display: flex;
+        flex-direction: column;
     }
     .section-Two .column > div:not(.page){
         width: 100%!important;
@@ -677,11 +684,11 @@ nav a:hover{
     .section-Two .column > div h1{
         font-size: 260%!important;
     }
-    .section-Two .column > div:hover:not(.page){
+    .section-Two .column .offers div:hover:not(.page){
         background-image: url(images/backgroundImageforDiv.jpg);
         background-repeat: no-repeat;
         background-position: center;
-        background-size: cover;
+        background-size: cover!important;
     }
     
     
@@ -960,4 +967,8 @@ nav a:hover{
         padding-bottom: 30px!important;
     }
 }
+/*TABLET SCREEN SIZE*/
+@media screen and (max-width: 768px){
+    
 
+}

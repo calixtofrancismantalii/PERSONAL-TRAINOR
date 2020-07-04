@@ -126,32 +126,32 @@ nav a:hover{
     background-size: cover;
     padding-left: 60px;
 }
-.section-Two .column .offers{
-    display: flex;
-}
 .section-Two .column .page > h4, h3{
     padding: 0px;
 }
-.section-Two .column .offers > div:not(.page){
+.section-Two .column .offers{
+    display: flex;
+}
+.section-Two .column .offers > div{
     flex: 1;
     margin-right: 10px;
     border-left: solid 3px grey;
     padding: 50px 30px;
     cursor: pointer;
 }
-.section-Two .column h4{
+.section-Two .column .offers > div h4{
     padding-bottom: 20px;
 }
-.section-Two .column h1{
+.section-Two .column .offers > div h1{
     font-size: 3em;
     padding-bottom: 60px;
 }
-.section-Two .column p{
+.section-Two .column .offers > div p{
     line-height: 25px;
     padding: 25px 0px;
     color: grey;
 }
-.section-Two .column button{
+.section-Two .column .offers > div button{
     font-size: 15px;
     padding: 10px 20px;
     border-radius: 100px;
@@ -161,10 +161,10 @@ nav a:hover{
     color: orangered;
     background-color: ghostwhite;
 }
-.section-Two .column button:hover{
+.section-Two .column .offers > div button:hover{
     color: black;
 }
-.section-Two .column > .offers div:hover:not(.page){
+.section-Two .column .offers > div:hover:not(.page){
     background-image: url(images/backgroundImageforDiv.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -656,14 +656,6 @@ nav a:hover{
         display: flex;
         flex-direction: column!important;
     }
-    .section-Two .column .offers{
-        display: flex;
-        flex-direction: column;
-    }
-    .section-Two .column > div:not(.page){
-        width: 100%!important;
-        border-bottom: solid 1px grey!important;
-    }
     .section-Two .column .page{
         width: 100%!important;
         display: flex;
@@ -675,13 +667,28 @@ nav a:hover{
         background-size: cover!important;
         padding: 30px!important;
     }
-    .section-Two .column > div:not(.page){                    
+    .section-Two .column .offers{
+        display: flex;
+        flex-direction: column!important;
+        padding: 0px 0px!important;
+    }
+    .section-Two .column .offers > div{
+        width: 100%!important;
+        border-bottom: solid 1px grey!important;
+    }
+    .section-Two .column .offers > div:nth-child(even){
+        border-left: solid 0px white!important;
+        border-right: solid 0px white!important;
+    }
+    .section-Two .column .offers div:not(.page){                    
         margin-right: 10px;
         border-left: none!important;
         padding: 50px 30px!important;
+        width: 100%!important;
         cursor: pointer;
+        
     }
-    .section-Two .column > div h1{
+    .section-Two .column .offers > div h1{
         font-size: 260%!important;
     }
     .section-Two .column .offers div:hover:not(.page){
@@ -689,6 +696,7 @@ nav a:hover{
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover!important;
+        padding: 50px 30px;
     }
     
     
@@ -970,5 +978,134 @@ nav a:hover{
 /*TABLET SCREEN SIZE*/
 @media screen and (max-width: 768px){
     
+    body{
+        background-image: none;
+        background-color: olivedrab;
+    }
+    
+    
+    /*nav*/
+    header{
+        background-color: rgba(0,0,0,0.3)!important;
+        z-index: 1;
+        padding: 10px 0px;
+        position: fixed;
+        width: 100%;
+        transition: 0.4s;
+    }
+    nav label{
+        display: block;
+        font-size: 20px!important;
+        color: black;
+        padding: 10px 15px;
+        border-radius: 100px;
+        background-color: white;
+        margin-left: 20px;
+    }
+    nav ul{
+        list-style-type: none;
+        display: flex;
+        flex-direction: column!important;
+        position: absolute;
+        margin-top: 65px;
+        background-color: #191919;
+        box-shadow: 1px 24px 38px -1px rgba(0,0,0,0.47);
+        width: 100%;
+        height: 0px;
+        overflow: hidden;
+        transition: 0.4s;
+    }
+    nav li{
+        padding: 0px!important;
+    }
+    nav ul a{
+        padding: 15px 20px!important;
+        display: block;
+        text-decoration: none;
+        color: inherit;
+        border-bottom: solid 1px #232323;
+    }
+    nav .titlelogo{
+        font-size: 10px;
+        margin-right: 20px;
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    nav .titlelogo span{
+        font-size: 12px!important;
+    }
+    
+    
+       /*sectionOne*/
+    .section-One{
+        background-image: url(images/sectionOneImage.2.for.tablet.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+        padding: 0px 30px;
+        margin: 0px 0px!important;
+    }
+    .section-One .column{
+        display: flex;
+        flex-direction: column!important;
+        padding-top: 80%;
+        padding: 0px 30px;
+    }
+    
+    
+    
+    /*sectionTwo*/
+    .section-Two{
+        padding: 0px 0px!important;
+        margin: 0px;
+    }
+    .section-Two .column{
+        display: flex;
+        flex-direction: column;
+    }
+    .section-Two .column .offers{
+        display: flex;
+        flex-direction: row;
+    }
+    .section-Two .column .offers > div{
+        width: 0px;
+        border-bottom: none;
+        margin-right: 0px!important;
+    }
+    .section-Two .column .offers > div:nth-child(even){
+        border-left: solid 2px white;
+        border-right: solid 2px white;
+    }
+    .section-Two .column .page{
+        width: 100%!important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-image: url(images/backgroundImageforDivPages.jpg);
+        background-repeat: no-repeat;
+        background-position: center!important;
+        background-size: cover!important;
+        padding: 30px!important;
+    }
+    .section-Two .column .offers{
+        display: flex;
+        flex-direction: row;
+        padding: 0px 10px;
+    }
+    .section-Two .column .offers div{   
+        flex: 1;
+        margin-right: 10px;
+        border: none;
+        padding: 50px 30px;
+        box-sizing: border-box;
+        cursor: pointer;
+    }
+    .section-Two .column > div h1{
+        font-size: 260%!important;
+    }
 
 }

@@ -1,13 +1,16 @@
 //toggle
 function openToggle(){
-    var ul;
+    var ul, header;
     ul = document.getElementById("ul");
+    header = document.getElementById("header");
     
     if(ul.style.height === "0px"){
         ul.style.height = "360px";
+        header.style.backgroundColor = "rgba(0,0,0,0.50)";
     }
     else{
         ul.style.height = "0px";
+        header.style.backgroundColor = "rgba(0,0,0,0.0)";
     }
 }
 

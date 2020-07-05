@@ -95,7 +95,7 @@ nav a:hover{
     flex: 2;
 /*    visibility: hidden;*/
 }
-.section-One .column > .qoute{
+.section-One .column .qoute{
     display: flex;
     flex-direction: row;
     text-align: right;
@@ -552,8 +552,7 @@ nav a:hover{
     
 
     /*nav*/
-    header{
-        background-color: rgba(0,0,0,0.3)!important;
+    #header{
         z-index: 1;
         padding: 10px 0px;
         position: fixed;
@@ -622,6 +621,7 @@ nav a:hover{
         flex-direction: column!important;
         padding-top: 80%!important;
         padding: 0px 30px;
+        width: 100%!important;
     }
     .section-One .column > div{
         flex: 0px!important;
@@ -630,13 +630,13 @@ nav a:hover{
     .section-One .column div h1{
         font-size: 300%!important;
     }
-    .section-One .column > .qoute{
+    .section-One .column .qoute{
         display: flex;
         flex-direction: row-reverse!important;
         text-align: left!important;
         font-size: 100%!important;
     }
-    .section-One .column > .qoute h3{
+    .section-One .column .qoute h3{
         font-size: 100%!important;
         font-weight: normal!important;
     }
@@ -650,7 +650,7 @@ nav a:hover{
     /*sectionTwo*/
     .section-Two{
         padding: 0px 0px!important;
-        margin: 0px;
+        margin: 0px 0px!important;
     }
     .section-Two .column{
         display: flex;
@@ -708,6 +708,7 @@ nav a:hover{
         background-size: contain!important;
         padding: 0px 30px!important;
         padding-bottom: 60px!important;
+        height: 0%!important;
     }
     .section-Three .container{
         display: flex;
@@ -980,13 +981,13 @@ nav a:hover{
     
     body{
         background-image: none;
-        background-color: olivedrab;
+        background-color: black;
     }
     
     
     /*nav*/
-    header{
-        background-color: rgba(0,0,0,0.3)!important;
+    #header{
+/*        background-color: rgba(0,0,0,0.0);*/
         z-index: 1;
         padding: 10px 0px;
         position: fixed;
@@ -1039,7 +1040,7 @@ nav a:hover{
     }
     
     
-       /*sectionOne*/
+    /*sectionOne*/
     .section-One{
         background-image: url(images/sectionOneImage.2.for.tablet.png);
         background-repeat: no-repeat;
@@ -1054,14 +1055,22 @@ nav a:hover{
         flex-direction: column!important;
         padding-top: 80%;
         padding: 0px 30px;
+        width: 100%!important;
     }
-    
+    .section-One .column .qoute{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        text-align: right;
+        font-size: 100%!important;
+    }
     
     
     /*sectionTwo*/
     .section-Two{
         padding: 0px 0px!important;
-        margin: 0px;
+        margin: 50px 0px;
     }
     .section-Two .column{
         display: flex;
@@ -1107,5 +1116,27 @@ nav a:hover{
     .section-Two .column > div h1{
         font-size: 260%!important;
     }
+    
+    /*sectionThree*/
+    .section-Three{
+        background-image: url(images/sectionThreeImage.2.for.tablet.png);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: contain!important;
+        padding: 0px 30px!important;
+        padding-bottom: 60px!important;
+        height: 100vh;
+    }
+    .section-Three .column{
+        display: flex;
+        flex-direction: column!important;
+        padding-top: 0px;
+    }
+     .section-Three .column > div:not(.aboutme){
+        flex: 1;
+        margin-top: 10%;
+        width: 100%;
+    }
+    
 
 }

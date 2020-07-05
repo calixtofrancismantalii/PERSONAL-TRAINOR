@@ -35,7 +35,7 @@ body{
 
 /*nav*/
 header{
-    background-color: rgba(0,0,0,0.3);
+/*    background-color: rgba(0,0,0,0.3);*/
     z-index: 1;
 }
 nav{
@@ -760,7 +760,8 @@ nav a:hover{
         display: flex;
         flex-direction: column!important;
         justify-content: flex-start;
-        width: 100%;      
+        width: 100%;  
+        padding: 0px 0px!important;
     }
     .section-Four .column > .testimonials{
         background-image: url(images/backgroundImageforDivPages.jpg);
@@ -924,6 +925,7 @@ nav a:hover{
         opacity: 100%;
     }
 
+    
     /*sectionSix*/
     .section-Six{
         padding: 50px 0px!important;
@@ -931,6 +933,7 @@ nav a:hover{
     .section-Six .column{
         display: flex;
         flex-direction: column!important;
+        padding: 0px 0px!important;
     }
     .section-Six .column .faq{
         width: 100%;
@@ -950,8 +953,14 @@ nav a:hover{
     .section-Six .column .faq-list .btn{
         padding: 50px 30px;
     }
+    
+    
     /*sectionSeven*/
     .section-Seven{
+        background-image: url(images/personal.footer.for.mobile.png)!important;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
         padding: 50px 0px!important;
     }
     .section-Seven .column{
@@ -1138,5 +1147,58 @@ nav a:hover{
         width: 100%;
     }
     
+    
+     /*sectionFour*/
+    .section-Four{
+        padding: 0px 0px!important;
+    }
+    .section-Four .column{
+        display: flex;
+        padding: 0px 30px;
+    }
+    
+    
+    /*sectionFive*/
+    .section-Five{
+        background-image: url(images/sectionFiveImage.1.for.tablet.png);
+        background-repeat: no-repeat!important;
+        background-position: top;
+        background-size: contain!important;
+        padding: 50px 0px!important;
+    }
+    .section-Five .column{
+        display: flex;
+        padding: 20px;
+    }
+    
+    
+    /*sectionSix*/
+    .section-Six{
+        padding: 50px 0px!important;
+    }
+    .section-Six .column{
+        display: flex;
+        padding: 0px 30px;
+    }
+    
+    
+    /*sectionSeven*/
+    .section-Seven{
+        background-image: url(images/personal.footer.for.tablet.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        
+        padding: 0px 0px;
+        padding-top: 50px;
+    }
+    .section-Seven .column .form{
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+    }
+    .section-Seven .column .form .social{
+        text-align: right;
+    }
 
 }

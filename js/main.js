@@ -16,9 +16,11 @@ function openToggle(){
 
 //close dropdown after click
 function closeLinks(){
-    var ul;
+    var ul, header;
     ul = document.getElementById("ul");
+    header = document.getElementById("header");
     ul.style.height = "0px";
+    header.style.backgroundColor = "rgba(0,0,0,0.0)";
 }
 
 //openModal
@@ -50,6 +52,7 @@ window.addEventListener("scroll", function(){
     }
     else{
         header.style.top = "0px";
+        header.style.backgroundColor = "rgba(0,0,0,0.50)";//header background show when top equal to 0px
     }
     lastScrollTop = scrollTop;
 })
